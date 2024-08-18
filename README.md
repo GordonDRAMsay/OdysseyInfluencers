@@ -52,8 +52,6 @@ The [Odyssey Influencers](https://www.odysseyinfluencers.com/) brand was born ou
 
 This new website is written in vanilla [HTML5](https://developer.mozilla.org/docs/web/html) for the documents’ markup, [CSS3](https://developer.mozilla.org/docs/web/css) for styling, a small amount of [JavaScript](https://developer.mozilla.org/docs/web/javascript) ([ES6](https://developer.mozilla.org/docs/web/javascript/language_resources)) It is designed to run in any major browser (i.e. Chromium-based [Microsoft Edge](https://www.microsoft.com/edge), [Google Chrome](https://www.google.co.uk/chrome), [Mozilla Firefox](https://www.mozilla.org/firefox), [Apple Safari](https://www.apple.com/safari) or [Opera](https://www.opera.com/)), desktop or mobile, without issue.
 
-The current hosting situation for the production site is only really suitable for hosting a [static HTML](https://en.wikipedia.org/wiki/Static_web_page) site (yay, budget constraints of a niche club), so it’s not really practical to host anything other than that, for instance an [ASP.NET Core](https://en.wikipedia.org/wiki/ASP.NET_Core) server application for more advanced functionality, so I consider it somewhat of a personal engineering challenge to see how far I can push the limits of what can be done, feature-wise, with a static website, before having to upgrade the hosting to allow for a more complex [client-server](https://en.wikipedia.org/wiki/Client%E2%80%93server_model) solution.
-
 ## Links
 
 The ite based-on the latest `master`, the staging area is a subdomain of the live website that we deploy to manually when we want to test-out new features and the production site is the current publicly-available website (also deployed to manually):
