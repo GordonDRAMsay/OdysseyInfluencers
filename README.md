@@ -1,6 +1,6 @@
 <div align="center">
     <h1>
-        <img src="readmeicon.png" alt="OI Logo" height="23px">
+        <img src="OI Logo.png" alt="OI Logo" height="23px">
         <a href="https://www.odysseyinfluencers.com/">OdysseyInfluencers.com</a>
     </h1>
     <h4><b>New website for Odyssey Influencers, launched in August 2024</b></h4>
