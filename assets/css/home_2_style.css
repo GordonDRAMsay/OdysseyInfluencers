@@ -22,7 +22,7 @@
 
 .tc-navbar-st2 .navbar-nav .nav-link:hover,
 .tc-navbar-st2 .navbar-nav .nav-link.active {
-    color: var(--cr-orange1);
+    color: var(--cr-salmon);
 }
 
 .tc-navbar-st2 .navbar-nav .flag {
@@ -64,7 +64,7 @@
 
 .tc-navbar-st2 .navbar-nav .menu-item .nav-link:hover::before,
 .tc-navbar-st2 .navbar-nav .menu-item .nav-link:hover::after {
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
 }
 
 .tc-navbar-st2 .navbar-nav .menu-item .nav-link::before {
@@ -292,7 +292,7 @@
     transform: translate(-50%, -50%);
     height: 270px;
     width: 270px;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     -webkit-filter: blur(100px);
     filter: blur(100px);
     opacity: 0.5;
@@ -603,7 +603,7 @@
     border-top: 35px solid transparent;
     border-right: 35px solid transparent;
     border-bottom: 35px solid transparent;
-    border-left: 35px solid var(--cr-orange1);
+    border-left: 35px solid var(--cr-salmon);
 }
 
 .tc-video-st2 .content::after {
@@ -859,7 +859,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 1px;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     color: #fff;
 }
 
@@ -912,7 +912,7 @@
 .tc-pricing-st2 {
     position: relative;
     padding: 150px 0;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     color: #fff;
 }
 
@@ -1144,7 +1144,7 @@
 }
 
 .tc-footer-st2 .links-wrapper .contact-links a:hover {
-    color: var(--cr-orange1);
+    color: var(--cr-salmon);
 }
 
 .tc-footer-st2 .links-group .links a {

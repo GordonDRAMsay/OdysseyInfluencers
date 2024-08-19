@@ -580,7 +580,7 @@
 .services-page-st1 .tc-marq-sliders .slider {
     position: relative;
     background-color: var(--cr-dark1);
-    color: #fff;
+    color: #de8585;
     width: 140%;
     left: -30%;
     border-top: 1px solid #9992;
@@ -861,7 +861,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 1px;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     color: #fff;
 }
 
@@ -1712,7 +1712,7 @@
     width: 86px;
     height: 86px;
     border-radius: 50%;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     z-index: 10;
     overflow: hidden;
     opacity: 0;

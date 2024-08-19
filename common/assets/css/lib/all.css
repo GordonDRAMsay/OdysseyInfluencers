@@ -16483,6 +16483,12 @@
     src: url(../../fonts/webfonts/fa-duotone-900.ttf) format("truetype")
 }
 
+.gloock-regular {
+    font-family: "Gloock", serif;
+    font-weight: 400;
+    font-style: normal;
+  }  
+
 .fa-duotone,
 .fad {
     position: relative;

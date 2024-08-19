@@ -6,6 +6,7 @@
 :root {
     --cr-blue1: #7B68EE;
     --cr-orange1: #FF8851;
+    --cr-salmon: #FA8072;
     --cr-green1: #CAF31F;
     --cr-dark1: #151515;
 }
@@ -37,24 +38,24 @@
 }
 
 .cr-orange1 {
-    color: var(--cr-orange1) !important;
+    color: var(--cr-salmon) !important;
 }
 
 .bg-orange1 {
-    background: var(--cr-orange1) !important;
+    background: var(--cr-salmon) !important;
 }
 
 .border-orange1 {
-    border-color: var(--cr-orange1) !important;
+    border-color: var(--cr-salmon) !important;
 }
 
 .hover-orange1:hover {
-    color: var(--cr-orange1) !important;
+    color: var(--cr-salmon) !important;
 }
 
 .hover-bg-orange1:hover {
-    background: var(--cr-orange1) !important;
-    border-color: var(--cr-orange1) !important;
+    background: var(--cr-salmon) !important;
+    border-color: var(--cr-salmon) !important;
     color: #fff !important;
 }
 
@@ -562,7 +563,7 @@ small.text {
 }
 
 .side_menu .main_links .main_link:hover {
-    color: var(--cr-orange1);
+    color: var(--cr-salmon);
     padding-left: 50px;
 }
 
@@ -687,7 +688,7 @@ small.text {
     width: 8px;
     height: 8px;
     z-index: 10000001;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     -webkit-transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
     transition: width 0.3s ease-in-out, height 0.3s ease-in-out, margin 0.3s ease-in-out, opacity 0.3s ease-in-out;
 }
@@ -709,7 +710,7 @@ small.text {
     -webkit-transition: all 0.1s linear;
     transition: all 0.1s linear;
     background: transparent;
-    border: 1px solid var(--cr-orange1);
+    border: 1px solid var(--cr-salmon);
     height: 40px;
     width: 40px;
     -webkit-box-shadow: rgba(255, 255, 255, 0) 0px 0px 0px 5px;
@@ -1064,7 +1065,7 @@ input:focus {
     width: 10%;
     height: 10%;
     border-radius: 50%;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     right: 0;
     bottom: 20%;
     -webkit-transition: all 0.4s ease;
@@ -1089,7 +1090,7 @@ input:focus {
 }
 
 .cir-butn.or-butn {
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
 }
 
 .cir-butn.or-butn::after {

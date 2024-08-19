@@ -18,7 +18,7 @@
 
 .tc-navbar-st1 .navbar-nav .nav-link:hover,
 .tc-navbar-st1 .navbar-nav .nav-link.active {
-    color: var(--cr-orange1);
+    color: var(--cr-salmon);
 }
 
 .tc-navbar-st1 .navbar-nav .flag {
@@ -794,7 +794,7 @@
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     z-index: 10;
     overflow: hidden;
     opacity: 0;
@@ -1100,7 +1100,7 @@
     -ms-flex-pack: center;
     justify-content: center;
     margin-top: 1px;
-    background-color: var(--cr-orange1);
+    background-color: var(--cr-salmon);
     color: #fff;
 }
 
@@ -1471,7 +1471,7 @@
 }
 
 .tc-footer-st1 .links-wrapper .contact-links a:hover {
-    color: var(--cr-orange1);
+    color: var(--cr-salmon);
 }
 
 .tc-footer-st1 .links-group .links a {
