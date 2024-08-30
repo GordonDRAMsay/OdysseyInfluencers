@@ -60,7 +60,6 @@ $(function() {
         return false;
     });
 
-
     // -------- counter --------
     $('.counter').countUp({
         delay: 10,
