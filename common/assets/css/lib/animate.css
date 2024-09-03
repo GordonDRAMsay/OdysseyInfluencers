@@ -1,11 +1,37 @@
 @charset "UTF-8";
-/*!
- * animate.css -http://daneden.me/animate
- * Version - 3.7.0
- * Licensed under the MIT license - http://opensource.org/licenses/MIT
- *
- * Copyright (c) 2018 Daniel Eden
- */
+
+ /* ----- Header Title ------ */
+
+@keyframes jump {
+	50%{
+		-webkit-transform: translateY(-30%)
+    }
+}
+
+@keyframes upscale {
+	50%{
+		-webkit-transform: scale(1.5)
+    }
+
+}
+
+.wobble span {
+    pointer-events: none;
+}
+
+.wobble span.jump {
+    animation: jump 0.5s 1;
+}
+
+.wobble span.upscale {
+    animation: upscale 0.5s 1;
+}
+
+span.sheen {
+		animation: sheen 0.3s 1
+}
+
+/* ---- Animations ---- */
 
 @-webkit-keyframes bounce {
     from,
@@ -102,8 +128,6 @@
     -webkit-animation-name: flash;
     animation-name: flash;
 }
-
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes pulse {
     from {
@@ -434,8 +458,6 @@
     -webkit-animation-name: tada;
     animation-name: tada;
 }
-
-/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
 
 @-webkit-keyframes wobble {
     from {

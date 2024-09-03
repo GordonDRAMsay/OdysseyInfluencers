@@ -149,23 +149,65 @@ $(window).on("load", function() {
 
 });
 
+// ------ Title mousecursor script --------
+
+var wobbleElements = document.querySelectorAll('.wobble');
+
+wobbleElements.forEach(function(el){
+	el.addEventListener('mouseover', function(){
+		
+		if(!el.classList.contains('animating') && !el.classList.contains('mouseover')){
+		
+			el.classList.add('animating','mouseover');
+		
+			var letters = el.innerText.split('');
+			
+			setTimeout(function(){ el.classList.remove('animating'); }, (letters.length + 1) * 50);
+			
+			var animationName = el.dataset.animation;
+			if(!animationName){ animationName = "jump"; }
+		
+			el.innerText = '';
+		
+			letters.forEach(function(letter){
+				if(letter == " "){
+					letter = "&nbsp;";
+				}
+				el.innerHTML += '<span class="letter">'+letter+'</span>';
+			});
+			
+			var letterElements = el.querySelectorAll('.letter');
+			letterElements.forEach(function(letter, i){
+				setTimeout(function(){
+					letter.classList.add(animationName);
+				}, 50 * i);
+			});
+			
+		}
+		
+	});
+	
+	el.addEventListener('mouseout', function(){				
+		el.classList.remove('mouseover');
+	});
+});
 
 // ------------ mousecursor scripts -----------
-$(function() {
-    function mousecursor() {
-        if ($("body")) {
-            const e = document.querySelector(".cursor-inner"),
-                t = document.querySelector(".cursor-outer");
-            let n, i = 0,
-                o = !1;
-            window.onmousemove = function(s) {
-                    o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
-                },
-                $("body").on("mouseenter", "a, .cursor-pointer", function() {
-                    e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
-                }), $("body").on("mouseleave", "a, .cursor-pointer", function() {
-                    e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover")
-                }),
+// $(function() {
+//     function mousecursor() {
+//         if ($("body")) {
+//             const e = document.querySelector(".cursor-inner"),
+//                 t = document.querySelector(".cursor-outer");
+//             let n, i = 0,
+//                 o = !1;
+//             window.onmousemove = function(s) {
+//                     o || (t.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)"), e.style.transform = "translate(" + s.clientX + "px, " + s.clientY + "px)", n = s.clientY, i = s.clientX
+//                 },
+//                 $("body").on("mouseenter", "a, .cursor-pointer", function() {
+//                     e.classList.add("cursor-hover"), t.classList.add("cursor-hover")
+//                 }), $("body").on("mouseleave", "a, .cursor-pointer", function() {
+//                     e.classList.remove("cursor-hover"), t.classList.remove("cursor-hover")
+//                 }),
 
                 // $("body").on("mouseenter", ".swiper-wrapper.curs-scroll", function () {
                 //     e.classList.add("cursor-scroll"), t.classList.add("cursor-scroll")
@@ -173,15 +215,15 @@ $(function() {
                 //     $(this).is("a") && $(this).closest(".cursor-pointer").length || (e.classList.remove("cursor-scroll"), t.classList.remove("cursor-scroll"))
                 // }),
 
-                e.style.visibility = "visible", t.style.visibility = "visible"
-        }
-    };
+//                 e.style.visibility = "visible", t.style.visibility = "visible"
+//         }
+//     };
 
-    $(function() {
-        mousecursor();
-    });
+//     $(function() {
+//         mousecursor();
+//     });
 
-});
+// });
 
 
 $(function() {
