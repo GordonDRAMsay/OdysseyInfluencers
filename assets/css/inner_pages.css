@@ -589,13 +589,13 @@
 }
 
 .services-page-st1 .tc-marq-sliders .slider:first-of-type {
-    -webkit-transform: rotate(8deg);
-    transform: rotate(8deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
 }
 
 .services-page-st1 .tc-marq-sliders .slider:last-of-type {
-    -webkit-transform: rotate(1deg);
-    transform: rotate(1deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
     z-index: 10;
 }
 

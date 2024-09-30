@@ -147,6 +147,28 @@ $(window).on("load", function() {
         body.removeClass('loaded');
     }, 1500);
 
+    // ------------ Gradient Title Animation on Load -----------
+//     setTimeout(function() {
+//         // ------------ Gradient Title Animation -----------
+//         var gradientTitle = $('.gradient-title');
+
+//         if (gradientTitle.length > 0) {
+//             // Explicitly set the starting background position to 'left center'
+//             gradientTitle.css('background-position', 'left center');
+
+//             // Add the class to trigger the hover-like animation on load
+//             setTimeout(function() {
+//                 gradientTitle.addClass('load-animate');
+//             }, 10); // Slight delay to trigger the CSS transition
+
+//             // Optionally, remove the class after the animation plays to reset it for hover
+//             setTimeout(function() {
+//                 gradientTitle.removeClass('load-animate');
+//             }, 2000); // Adjust timing based on your preference
+//         } else {
+//             console.warn("No element found with the class 'gradient-title'");
+//         }
+//     }, 1500); // Adjust the delay based on your preference (1.5 seconds here)
 });
 
 // ------ Title mousecursor script --------

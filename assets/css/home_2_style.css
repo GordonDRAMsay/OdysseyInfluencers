@@ -147,22 +147,79 @@
 
 /* -------- Main title ---------- */
 .gradient-title {
-    color:#FFFF
-
-  }
-  
-.gradient-title:hover {
-    -webkit-text-fill-color: transparent;
-    background-position: left center;
-    background: -webkit-linear-gradient(to right,#ffffff, #c34949, #ff9488);  
-    background: linear-gradient(to right,#ffffff, #c34949, #ff9488); 
+    -webkit-text-fill-color: white; /* Start with white text */
+    background: -webkit-linear-gradient(to right, #fb877a, #ffb1bb, #ffffff);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #fb877a, #ffb1bb, #ffffff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-position: right center;
-    background-size: 400% auto;
+    background-size: 400% auto; /* Initial gradient setup */
     background-clip: text;
     -webkit-background-clip: text;
-    transition: background-position 1000ms ease-out;
-  }
+    transition: background-position 1000ms ease-out, -webkit-text-fill-color 1000ms ease-out; /* Transition both background and text color */
+}
 
+.gradient-title:hover {
+    -webkit-text-fill-color: transparent; /* Reveal the gradient by making the text transparent */
+    background-position: left center; /* Shift the gradient on hover */
+}
+
+.gradient-title:not(:hover) {
+    transition: -webkit-text-fill-color 1000ms ease-in 1000ms; /* Delay the transition back to white */
+}
+
+/*-----------new hero header animation---------*/
+.title-gradient {
+    background: linear-gradient(270deg, #ffffff, #ffa6b2, #fb877a);
+    background-size: 600% 600%;
+    -webkit-animation: titleAnimation 5s ease infinite;
+    -moz-animation: titleAnimation 5s ease infinite;
+    animation: titleAnimation 5s ease infinite;
+    font-size: 1em;
+    line-height: 1.1em;
+    display: inline-block;
+    text-decoration: underline;
+    margin: 0 0 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  @-webkit-keyframes titleAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @-moz-keyframes titleAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
 .tc-header-st2 h1 .img {
     width: 195px;
     height: 90px;
@@ -272,7 +329,7 @@
 
 .tc-about-st2 {
     position: relative;
-    padding: 150px 0;
+    padding: 75px 0;
 }
 
 .tc-about-st2 .title {
